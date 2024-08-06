@@ -1,7 +1,7 @@
 ---
-name: Canvas
-release: 2023
+name: Blue light
+release: 2024
 image: /projects/canvas.webp
-link: https://canvas.hrcd.fr/
+link: https://psonbre.itch.io/blue-light
 layout: project
 ---

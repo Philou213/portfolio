@@ -5,6 +5,8 @@ const socialMediaRegexMap = [
   { regex: /linkedin\.com/, name: 'LinkedIn', logo: 'SvgoLinkedin' },
   { regex: /instagram\.com/, name: 'Instagram', logo: 'SvgoInstagram' },
   { regex: /spotify\.com/, name: 'Spotify', logo: 'SvgoSpotify' },
+  { regex: /gitlab\.com/, name: 'GitLab', logo: 'SvgoGitlab' },
+  { regex: /itch\.io/, name: 'Itch', logo: 'SvgoItch' },
 ]
 
 const { socials } = useAppConfig()

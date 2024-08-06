@@ -40,12 +40,12 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
           </h2>
         </div>
 
-        <SettingsAvailability
+        <!--SettingsAvailability
           background
           class="mt-2"
           style="--stagger: 2"
           data-animate
-        />
+        /-->
 
         <!-- social -->
         <HomeSocial
@@ -53,27 +53,27 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
           data-animate
         />
 
-        <!-- cta -->
+        <!-- cta >
         <HomeCTA
           style="--stagger: 4"
           data-animate
-        />
+        /-->
 
         <div
           style="--stagger: 5"
           data-animate
           class="mt-12 flex w-full max-w-3xl flex-col gap-4 lg:mt-16"
         >
-          <!-- projects -->
-          <HomeProjects />
+          <!-- projects >
+          <HomeProjects /-->
         </div>
 
-        <Divider class="my-9" />
+        <!--Divider class="my-9" /-->
 
-        <HomeFaq
+        <!--HomeFaq
           style="--stagger: 6"
           data-animate
-        />
+        /-->
       </div>
     </div>
   </section>
