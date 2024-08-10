@@ -49,7 +49,7 @@ defineOgImage({
           {{ $t("navigation.writing") }}
         </span>
       </NuxtLink>
-      <SettingsLanguageToggle class="fixed bottom-4 right-4 sm:bottom-4" />
+      <!--SettingsLanguageToggle class="fixed bottom-4 right-4 sm:bottom-4" /-->
       <article class="writing prose mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
         <h1>
           {{ page?.title }}
