@@ -26,13 +26,6 @@ jobs:
           export PATH="$HOME/.bun/bin:$PATH"  # Ensure PATH is updated
           bun --version  # Verify Bun is installed
           bun install
-
-      - name: Install dependencies
-        run: |
-          bun install
-
-      - name: Generate static files
-        run: |
           bun generate
 
       - name: Deploy to GitHub Pages
