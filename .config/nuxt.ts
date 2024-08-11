@@ -93,7 +93,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'no_prefix',
     detectBrowserLanguage: {
-      useCookie: true,
+      useCookie: false,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
@@ -126,7 +126,7 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
     locales: ['en', 'fr'],
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
   },
 
   svgo: {
