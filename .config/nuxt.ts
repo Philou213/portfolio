@@ -93,13 +93,13 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'no_prefix',
     detectBrowserLanguage: {
-      useCookie: false,
+      useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
     baseUrl: '/',
     locales: ['en','fr'],
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
     vueI18n: '~/i18n.config.ts',
   },
 
@@ -126,7 +126,7 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
     locales: ['en', 'fr'],
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
   },
 
   svgo: {
