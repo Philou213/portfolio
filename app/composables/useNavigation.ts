@@ -30,11 +30,11 @@ export function getNavigation(where: Where): Record<string, Navigation> | [] {
           to: '/about',
           icon: 'i-lucide-user',
         },
-        contact: {
+        /*contact: {
           name: 'Contact',
           to: '/contact',
           icon: 'i-lucide-mail',
-        },
+        },*/
       }
     default:
       return []

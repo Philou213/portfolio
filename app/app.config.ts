@@ -1,7 +1,7 @@
 export default defineAppConfig({
   appName: 'Philippe St-Laurent-Recoura - Portfolio',
   appDescription: 'Portfolio de présentation de Philippe St-Laurent-Recoura',
-  profilePicture: '/assets/hugo-richard-light.webp',
+  profilePicture: '/assets/graduationCrop.jpg',
   footerName: 'Philippe St-Laurent-Recoura',
   email: 'philippestlr@gmail.com',
   twitterUsername: '@HugoRCD__',
@@ -9,9 +9,9 @@ export default defineAppConfig({
   openGraphImage: 'https://canvas.hrcd.fr/social-preview.jpg',
   socials: {
     github: 'https://github.com/Philou213',
-    //gitlab: 'https://gitlab.com/Philou213',
+    gitlab: 'https://gitlab.com/Philou213',
     linkedin: 'https://www.linkedin.com/in/philippe-st-laurent-recoura-9bb40224a/',
-    //itch: 'https://philou213.itch.io/',
+    itch: 'https://philou213.itch.io/',
   },
   ui: {
     primary: 'emerald',
