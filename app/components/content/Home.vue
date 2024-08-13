@@ -64,8 +64,8 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
           data-animate
           class="mt-12 flex w-full max-w-3xl flex-col gap-4 lg:mt-16"
         >
-          <!-- projects >
-          <HomeProjects /-->
+        <!-- projects -->
+          <HomeProjects />  
         </div>
 
         <!--Divider class="my-9" /-->

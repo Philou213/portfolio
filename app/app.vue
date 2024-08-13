@@ -35,7 +35,7 @@ useHead({
 })
 
 useSeoMeta({
-  author: 'Hugo Richard',
+  author: 'Philippe St-Laurent-Recoura',
   ogType: 'website',
   ogTitle: appConfig.appName,
   ogUrl: () => runtimeConfig.public.siteUrl,

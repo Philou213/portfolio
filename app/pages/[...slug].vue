@@ -21,7 +21,7 @@ useHead({
 
 useSeoMeta({
   description: () => t('global.app_description'),
-  author: 'Hugo Richard',
+  author: 'Philippe St-Laurent-Recoura',
   ogImage: 'https://canvas.hrcd.fr/social-preview.jpg',
   ogType: 'website',
   ogTitle: appConfig.appName,
