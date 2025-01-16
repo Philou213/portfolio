@@ -49,7 +49,7 @@ const img = useImage()
               <span class="whitespace-nowrap text-sm font-semibold text-white/90">
                 {{ project.name }}
               </span>
-              <span class="whitespace-nowrap text-xs text-neutral-500">
+              <span class="whitespace-nowrap text-xs text-white/60">
                 {{ project.release === "soon" ? $t("global.soon") + "..." : project.release }}
               </span>
             </div>
