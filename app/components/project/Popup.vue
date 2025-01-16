@@ -5,19 +5,19 @@ import type { Project } from '~/data/projects';
 const props = defineProps({
   isOpen: {
     type: Boolean,
-    required: true
+    required: true,
   },
   project: {
     type: Object as PropType<Project>,
-    required: true
-  }
+    required: true,
+  },
 });
 
-const img = useImage()
+const img = useImage();
 
 const emit = defineEmits(['update:isOpen']);
 
-// Watch for changes in isOpen and update the modal accordingly
+// Watch for changes in isOpen and handle closing the modal
 watch(() => props.isOpen, (newVal) => {
   if (!newVal) {
     closeModal();
@@ -31,53 +31,48 @@ function closeModal() {
 
 <template>
   <UModal :model-value="props.isOpen" @close="closeModal">
-    <div class="flex justify-center items-center w-full h-full p-5">
+    <div class="flex justify-center items-center w-full h-full p-10">
       <div
-        :aria-label="project.name + ' project link'"
-        class="group relative flex cursor-pointer flex-col gap-1 rounded-lg border border-white/10 bg-zinc-900/80 p-4 shadow-2xl shadow-zinc-950/50 backdrop-blur-sm max-w-[90vw] max-h-[90vh]"
+        class="relative flex flex-col items-center gap-6 bg-zinc-900/80 p-10 rounded-lg shadow-2xl shadow-zinc-950/50 max-w-[80vw] max-h-[90vh] backdrop-blur-md"
+        :aria-label="project.name + ' project details'"
       >
-        <div class="flex justify-center overflow-hidden rounded-lg">
-          <NuxtImg
-            :placeholder="img(`${project.image}`)"
-            width="1536"
-            :alt="project.name + ' project image'"
-            class="max-h-96 w-auto rounded-lg object-cover transition-all duration-300 hover:scale-105"
-            :src="project.image"
-            :aria-label="project.name + ' project image'"
-          />
+        <!-- Project Image -->
+        <NuxtImg
+          :placeholder="img(`${project.image}`)"
+          width="1920"
+          :alt="project.name + ' project image'"
+          class="h-72 w-full rounded-lg object-cover"
+          :src="project.image"
+        />
+
+        <!-- Project Name -->
+        <h2 class="text-2xl font-bold text-white text-center">
+          {{ project.name }}
+        </h2>
+
+       <!-- Context and Role -->
+       <div class="flex justify-center gap-8 text-sm font-bold text-neutral-400">
+          <!-- Project Context -->
+          <p v-html="'<strong>' + $t('global.context') + '</strong>' + '<br>' + project.context"></p>
+          <!-- Role -->
+          <p v-html="'<strong>' + $t('global.role') + '</strong>' + '<br>' + project.role"></p>
         </div>
-        <div class="absolute bottom-0 flex w-full justify-center">
-          <div class="rounded-t-lg border-x border-t border-white/10 border-b-transparent px-4 py-[5px] shadow-md backdrop-blur-md sm:w-2/3">
-            <div class="flex items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <component
-                  :is="project.logo"
-                  v-if="project.name !== 'Sekoïa'"
-                  :alt="project.name + ' logo'"
-                  :aria-label="project.name + ' logo'"
-                  :font-controlled="false"
-                  class="size-5 text-white/90"
-                />
-                <div class="flex items-center gap-2">
-                  <span class="whitespace-nowrap text-sm font-semibold text-white/90">
-                    {{ project.name }}
-                  </span>
-                  <span class="whitespace-nowrap text-xs text-neutral-500">
-                    {{ project.release === "soon" ? $t("global.soon") + "..." : project.release }}
-                  </span>
-                </div>
-              </div>
-              <div
-                class="flex items-center justify-center rounded-full border border-transparent p-1 shadow-md backdrop-blur-md transition-all duration-500 group-hover:-rotate-45 group-hover:border-white/10"
-              >
-                <UIcon
-                  name="i-heroicons-arrow-right"
-                  class="size-3 text-white"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <!-- Short Description -->
+        <p class="text-base text-neutral-300 text-center leading-relaxed">
+          {{ project.description || $t('project.description') }}
+        </p>
+
+        <!-- Redirect Button -->
+        <a
+          :href="project.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 inline-flex items-center gap-3 rounded bg-blue-600 px-8 py-3 text-lg text-white hover:bg-blue-700 transition-all"
+        >
+          <UIcon name="i-heroicons-arrow-right" class="size-5" />
+          {{ $t('global.visit_project') }}
+        </a>
       </div>
     </div>
   </UModal>
