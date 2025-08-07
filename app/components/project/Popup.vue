@@ -31,9 +31,9 @@ function closeModal() {
 
 <template>
   <UModal :model-value="props.isOpen" @close="closeModal">
-    <div class="flex justify-center items-center w-full h-full p-10">
+    <div class="flex justify-center items-center w-full h-full p-2 bg-grey-1000">
       <div
-        class="relative flex flex-col items-center gap-6 bg-zinc-900/80 p-10 rounded-lg shadow-2xl shadow-zinc-950/50 max-w-[80vw] max-h-[90vh] backdrop-blur-md"
+        class="relative flex flex-col items-center gap-6 bg-zinc-900/80 rounded-lg p-10 shadow-2xl shadow-zinc-950/50 max-w-[80vw] max-h-[90vh] backdrop-blur-md"
         :aria-label="project.name + ' project details'"
       >
         <!-- Project Image -->
@@ -50,13 +50,17 @@ function closeModal() {
           {{ project.name }}
         </h2>
 
-       <!-- Context and Role -->
-       <div class="flex justify-center gap-8 text-sm font-bold text-neutral-400">
+        <!-- Context and Role -->
+        <div class="flex flex-col items-start text-sm font-bold text-neutral-400 w-full">
           <!-- Project Context -->
-          <p v-html="'<strong>' + $t('global.context') + '</strong>' + '<br>' + project.context"></p>
+          <p class="text-left leading-relaxed" 
+            v-html="'<strong>' + $t('global.context') + '</strong>' + project.context"></p>
+
           <!-- Role -->
-          <p v-html="'<strong>' + $t('global.role') + '</strong>' + '<br>' + project.role"></p>
+          <p class="text-left leading-relaxed" 
+            v-html="'<strong>' + $t('global.role') + '</strong>' + project.role"></p>
         </div>
+
 
         <!-- Short Description -->
         <p class="text-base text-neutral-300 text-center leading-relaxed">
@@ -68,7 +72,7 @@ function closeModal() {
           :href="project.link"
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-6 inline-flex items-center gap-3 rounded bg-blue-600 px-8 py-3 text-lg text-white hover:bg-blue-700 transition-all"
+          class="mt-6 inline-flex items-center gap-3 rounded bg-gray-100 px-8 py-3 text-lg text-black hover:bg-gray-200 transition-all"
         >
           <UIcon name="i-heroicons-arrow-right" class="size-5" />
           {{ $t('global.visit_project') }}
