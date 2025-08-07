@@ -2,9 +2,10 @@
 name: Bee on Duty
 release: 2023
 image: /projects/beeOnDuty.png
-repo:
+link: https://philou213.itch.io/bee-on-duty
+type: "Godot"
 layout: project
 context: "Intercollégial de Valleyfield 2023"
 role: "Programmeur"
-description: "Dans ce jeu, le joueur doit rapporter du pollen qu'il trouve sur la carte et doit l'utiliser comme monnaie pour acheter des fleurs. Ces dernières serviront à l'aider à le protéger des méchantes guêpes qui veulent détruire la ruche"
+description: "Dans ce jeu Tower-Defense, le joueur doit rapporter du pollen trouvé sur la carte et l'utiliser comme monnaie pour acheter des fleurs. Ces fleurs l'aideront à se défendre contre les guêpes menaçantes qui veulent attaquer la ruche."
 ---

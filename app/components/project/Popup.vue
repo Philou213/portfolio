@@ -52,6 +52,10 @@ function closeModal() {
 
         <!-- Context and Role -->
         <div class="flex flex-col items-start text-sm font-bold text-neutral-400 w-full">
+            <!-- Project Type -->
+            <p class="text-left leading-relaxed" 
+            v-html="'<strong>' + $t('global.type') + '</strong>' + project.type"></p>
+
           <!-- Project Context -->
           <p class="text-left leading-relaxed" 
             v-html="'<strong>' + $t('global.context') + '</strong>' + project.context"></p>

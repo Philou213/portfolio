@@ -22,5 +22,6 @@
   "visit_project" : "Visit project",
   "visit_code" : "See code",
   "context": "Context : ",
-  "role": "Role : "
+  "role": "Role : ",
+  "type": "Project type : "
 }

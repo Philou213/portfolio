@@ -38,7 +38,7 @@ function openModal() {
       />
     </div>
     <div class="absolute bottom-0 flex w-full justify-center">
-      <div class="rounded-t-lg border-x border-t border-white/10 border-b-transparent px-4 py-[5px] shadow-md backdrop-blur-md sm:w-2/3">
+      <div class="rounded-t-lg border-x border-t border-white/10 border-b-transparent px-4 py-[5px] shadow-md backdrop-blur-md sm:w-8/10">
         <div class="flex items-center justify-between gap-2">
           <div class="flex items-center gap-2">
             <component
@@ -50,6 +50,11 @@ function openModal() {
               class="size-5 text-white/90"
             />
             <div class="flex items-center gap-2">
+              <UIcon
+              v-if="project.featured"
+              name="i-heroicons-star-solid"
+              class="size-5 text-white"
+            />
               <span class="whitespace-nowrap text-sm font-semibold text-white/90">
                 {{ project.name }}
               </span>
