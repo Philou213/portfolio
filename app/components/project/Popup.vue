@@ -33,7 +33,7 @@ function closeModal() {
   <UModal :model-value="props.isOpen" @close="closeModal">
     <div class="flex justify-center items-center w-full h-full p-2 bg-grey-1000">
       <div
-        class="relative flex flex-col items-center gap-6 bg-zinc-900/80 rounded-lg p-10 shadow-2xl shadow-zinc-950/50 max-w-[80vw] max-h-[90vh] backdrop-blur-md"
+        class="relative flex flex-col items-center gap-10 bg-zinc-900/80 rounded-lg p-8 shadow-2xl shadow-zinc-950/50 w-full max-h-[95vh] backdrop-blur-md"
         :aria-label="project.name + ' project details'"
       >
         <!-- Project Image -->
@@ -67,16 +67,30 @@ function closeModal() {
           {{ project.description || $t('project.description') }}
         </p>
 
-        <!-- Redirect Button -->
-        <a
-          :href="project.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mt-6 inline-flex items-center gap-3 rounded bg-gray-100 px-8 py-3 text-lg text-black hover:bg-gray-200 transition-all"
-        >
-          <UIcon name="i-heroicons-arrow-right" class="size-5" />
-          {{ $t('global.visit_project') }}
-        </a>
+        <div class="flex gap-4">
+          <!-- Redirect Button -->
+          <a
+            :href="project.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 inline-flex items-center gap-3 rounded bg-gray-100 px-8 py-3 text-lg text-black hover:bg-gray-200 transition-all"
+          >
+            <UIcon name="i-heroicons-arrow-right" class="size-5" />
+            {{ $t('global.visit_project') }}
+          </a>
+
+          <!-- Git button -->
+          <a
+            v-if="project.repo"
+            :href="project.repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 inline-flex items-center gap-3 rounded bg-gray-100 px-8 py-3 text-lg text-black hover:bg-gray-200 transition-all"
+          >
+            <UIcon name="i-heroicons-code-bracket" class="size-5" />
+            {{ $t('global.visit_code') }}
+          </a>
+        </div>
       </div>
     </div>
   </UModal>

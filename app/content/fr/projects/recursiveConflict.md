@@ -3,6 +3,7 @@ name: Recursive conflict
 release: 2025
 image: /projects/recursiveConflict.png
 link: https://philou213.itch.io/recursive-conflict
+repo: https://github.com/Philou213/GMTK2025
 layout: project
 context: "GameJam"
 role: "Développeur en solo"

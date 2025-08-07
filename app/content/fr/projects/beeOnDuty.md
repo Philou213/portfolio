@@ -2,7 +2,7 @@
 name: Bee on Duty
 release: 2023
 image: /projects/beeOnDuty.png
-link: https://psonbre.itch.io/bee-on-duty
+repo:
 layout: project
 context: "Intercollégial de Valleyfield 2023"
 role: "Programmeur"
