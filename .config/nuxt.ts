@@ -100,6 +100,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     lazy: true,
+    langDir: 'locales/',
     baseUrl: '/',
     locales: ['en','fr'],
     defaultLocale: 'en',
