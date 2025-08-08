@@ -5,6 +5,10 @@ image: /projects/recursiveConflict.png
 link: https://philou213.itch.io/recursive-conflict
 repo: https://github.com/Philou213/GMTK2025
 type: "Godot"
+tags:
+    - Godot
+    - Gamejam
+    - Solo
 layout: project
 context: "GameJam"
 role: "Développeur en solo"

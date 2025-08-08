@@ -6,6 +6,7 @@ link: https://psonbre.itch.io/blue-light
 type: "Unity"
 tags:
     - Unity
+    - Gamejam
 layout: project
 context: "GameJam"
 role: "Level designer / Programmeur Gameplay"

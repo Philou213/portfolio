@@ -4,6 +4,9 @@ release: 2022
 image: /projects/dogOfDuty.png
 link: https://psonbre.itch.io/dog-of-duty
 type: "Construct"
+tags:
+    - Construct
+    - Gamejam
 layout: project
 context: "Intercollégial de Valleyfield 2022"
 role: "Game designer"

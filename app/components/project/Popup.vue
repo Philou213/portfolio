@@ -74,6 +74,7 @@ function closeModal() {
         <div class="flex gap-4">
           <!-- Redirect Button -->
           <a
+            v-if="project.link"
             :href="project.link"
             target="_blank"
             rel="noopener noreferrer"

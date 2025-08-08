@@ -6,6 +6,7 @@ link: https://psonbre.itch.io/blind-bond
 type: "Construct"
 tags:
     - Construct
+    - Gamejam
 layout: project
 context: "GameJam"
 role: "Level designer"

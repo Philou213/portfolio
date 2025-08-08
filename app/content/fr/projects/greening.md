@@ -4,6 +4,9 @@ release: 2021
 image: /projects/greening.png
 link: https://psonbre.itch.io/greening
 type: "Construct"
+tags:
+    - Construct
+    - Gamejam
 layout: project
 context: "GameJam"
 role: "Game designer"

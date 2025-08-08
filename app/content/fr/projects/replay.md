@@ -4,6 +4,9 @@ release: 2024
 image: /projects/replay.png
 link: https://psonbre.itch.io/replay
 type: "Unity"
+tags:
+    - Unity
+    - Gamejam
 layout: project
 context: "GameJam"
 role: "Programmeur Gameplay / Level Designer / Game Designer"

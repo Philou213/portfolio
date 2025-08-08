@@ -9,6 +9,7 @@ export const projectTags = [
   'Favorite',
   'Scolaire',
   'Personnel',
+  'Commercial'
 ] as const;
 
 export type ProjectTag = typeof projectTags[number];

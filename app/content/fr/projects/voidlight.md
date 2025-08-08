@@ -4,6 +4,10 @@ release: 2025
 image: /projects/voidlight.png
 link: https://psonbre.itch.io/wonderjam
 type: "Godot"
+tags:
+    - Godot
+    - Gamejam
+    - Favorite
 layout: project
 featured: true
 context: "Wonderjam hiver 2025 (GameJam interne à l'UQAC)"

@@ -5,6 +5,10 @@ image: /projects/collateral.png
 link: https://psonbre.itch.io/collateral-damage
 repo: https://gitlab.com/Psonbre/ProjetSynthese_NeonPolygons
 type: "Unity"
+tags:
+    - Unity
+    - Scolaire
+    - Favorite
 layout: project
 featured: true
 context: "Projet final de Techniques de l'informatique"

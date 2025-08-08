@@ -4,6 +4,10 @@ release: 2021
 image: /projects/deathHazard.png
 link: https://philou213.itch.io/death-hazard
 type: "Godot"
+tags:
+    - Godot
+    - Scolaire
+    - Solo
 layout: project
 context: "Projet personnel PEI"
 role: "Développeur solo"

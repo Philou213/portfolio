@@ -4,6 +4,9 @@ release: 2023
 image: /projects/doubleTime.png
 link: https://philou213.itch.io/double-time
 type: "Unity"
+tags:
+    - Unity
+    - Scolaire
 layout: project
 context: "Projet en Techniques de l'informatique"
 role: "Programmeur"

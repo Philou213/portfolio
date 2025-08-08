@@ -4,6 +4,9 @@ release: 2021
 image: /projects/neonShadows.png
 link: https://psonbre.itch.io/neon-shadows
 type: "Construct"
+tags:
+    - Construct
+    - Gamejam
 layout: project
 context: "GameJam"
 role: "Level designer / Game designer"

@@ -2,10 +2,11 @@
 name: Bee on Duty
 release: 2023
 image: /projects/beeOnDuty.png
-link: https://philou213.itch.io/bee-on-duty
-type: "Godot"
+link: https://psonbre.itch.io/bee-on-duty
+type: "Construct"
 tags:
-    - Godot
+    - Construct
+    - Gamejam
 layout: project
 context: "Intercollégial de Valleyfield 2023"
 role: "Programmeur"

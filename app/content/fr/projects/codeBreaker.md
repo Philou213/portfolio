@@ -4,6 +4,9 @@ release: En développement
 image: /projects/codeBreaker.png
 link: https://psonbre.itch.io/code-breaker
 type: "Construct"
+tags:
+    - Construct
+    - Personnel
 layout: project
 context: "Personnel"
 role: "Level designer / Game designer"

@@ -25,7 +25,7 @@ const filteredProjects = computed(() => {
       (project.description?.toLowerCase().includes(query) ?? false)
 
     const matchesTags =
-      tags.length === 0 || project.tags?.some(tag => tags.includes(tag))
+      tags.length === 0 || tags.every(tag => project.tags?.includes(tag))
 
     return matchesSearch && matchesTags
   })
