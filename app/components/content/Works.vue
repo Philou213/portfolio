@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import SearchBar from '~/components/Search/Searchbar.vue'
-import TagDropdown from '~/components/Search/TagDropdown.vue'
+import SearchBar from '~/components/search/Searchbar.vue'
+import TagDropdown from '~/components/search/TagDropdown.vue'
+import type { ProjectTag } from '~/content/tags'
 
 const { locale } = useI18n()
 
