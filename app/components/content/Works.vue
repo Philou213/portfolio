@@ -51,8 +51,10 @@ const filteredProjects = computed(() => {
         <TagDropdown v-model="selectedTags" />
       </div>
     </div>
-
-    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div v-if="filteredProjects.length === 0" class="text-center text-gray-400 mt-8">
+      {{ $t('global.no_projects_found') }}
+    </div>
+    <div v-else class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <ProjectCard
         v-for="project in filteredProjects"
         :key="project.name"

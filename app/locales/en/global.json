@@ -25,5 +25,6 @@
   "role": "Role : ",
   "type": "Project type : ",
   "search" : "Search projects...",
-  "filter": "Filter by Tags"
+  "filter": "Filter by Tags",
+  "no_projects_found": "No projects found"
 }
