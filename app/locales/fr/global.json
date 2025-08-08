@@ -23,5 +23,7 @@
   "visit_code" : "Voir le code",
   "context": "Contexte : ",
   "role": "Rôle : ",
-  "type": "Type de projet : "
+  "type": "Type de projet : ",
+  "search" : "Rechercher un projet...",
+  "filter": "Filtrer par Tags"
 }

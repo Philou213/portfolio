@@ -4,6 +4,8 @@ release: 2023
 image: /projects/beeOnDuty.png
 link: https://philou213.itch.io/bee-on-duty
 type: "Godot"
+tags:
+    - Godot
 layout: project
 context: "Intercollégial de Valleyfield 2023"
 role: "Programmeur"

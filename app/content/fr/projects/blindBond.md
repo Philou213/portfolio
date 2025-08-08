@@ -4,6 +4,8 @@ release: 2021
 image: /projects/blindBond.png
 link: https://psonbre.itch.io/blind-bond
 type: "Construct"
+tags:
+    - Construct
 layout: project
 context: "GameJam"
 role: "Level designer"
