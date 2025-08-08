@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { projectTags } from '~/content/tags'
+
+const { t } = useI18n()
 
 const props = defineProps<{
   modelValue: string[]
@@ -32,6 +35,14 @@ function toggleTag(tag: string) {
   }
   emit('update:modelValue', selectedTags.value)
 }
+
+// Sorted tags using localized labels
+const sortedTags = computed(() => {
+  return [...projectTags].sort((a, b) =>
+    t(`tags.${a}`).localeCompare(t(`tags.${b}`))
+  )
+})
+
 </script>
 
 <template>
@@ -47,19 +58,20 @@ function toggleTag(tag: string) {
       class="absolute z-10 mt-1 w-full rounded border border-gray-300 bg-gray-800 shadow-lg max-h-60 overflow-auto"
     >
       <div
-        v-for="tag in projectTags"
+        v-for="tag in sortedTags"
         :key="tag"
         class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex items-center gap-2"
+        @click="toggleTag(tag)"
       >
         <input
           type="checkbox"
           :id="tag"
           :value="tag"
           :checked="selectedTags.includes(tag)"
-          @change="toggleTag(tag)"
+          @change.stop
         />
-        <label :for="tag" class="text-white">{{ tag }}</label>
-      </div>
+        <label class="cursor-pointer">  {{ $t(`tags.${tag}`) }}</label>
+  </div>
     </div>
   </div>
 </template>

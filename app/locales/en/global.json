@@ -26,5 +26,15 @@
   "type": "Project type : ",
   "search" : "Search projects...",
   "filter": "Filter by Tags",
-  "no_projects_found": "No projects found"
+  "no_projects_found": "No projects found",
+  "Unity": "Unity",
+  "Godot": "Godot",
+  "Unreal": "Unreal",
+  "Web": "Web",
+  "Solo": "Solo",
+  "Construct": "Construct",
+  "Gamejam": "Game jam",
+  "Favorite": "Favorite",
+  "Scolaire": "School",
+  "Personnel": "Personal"
 }
