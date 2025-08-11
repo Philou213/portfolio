@@ -7,13 +7,6 @@ export default defineNuxtConfig({
     head: {
       viewport: 'width=device-width, initial-scale=1',
       charset: 'utf-8',
-      script: [
-        {
-          'src': 'https://analytics.hrcd.fr/js/script.js',
-          'defer': true,
-          'data-domain': 'canvas.hrcd.fr',
-        },
-      ],
     },
     pageTransition: {
       name: 'fade',
@@ -26,11 +19,11 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.NUXT_SITE_URL || 'https://canvas.hrcd.fr',
+    url: process.env.NUXT_SITE_URL || 'https://philippestlaurentrecoura.com',
     identity: {
       type: 'Person',
     },
-    twitter: '@HugoRCD__',
+    name: 'Philippe St-Laurent Recoura',
   },
 
   css: ['~/assets/style/main.css'],
@@ -91,7 +84,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: 'prefix_except_default',
+    strategy: 'no_prefix',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',

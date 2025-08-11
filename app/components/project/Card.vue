@@ -75,5 +75,5 @@ function openModal() {
       </div>
     </div>
   </div>
-  <Popup :isOpen="isOpen" :project="project" @update:isOpen="isOpen = $event" />
+  <Popup v-if="project" :isOpen="isOpen" :project="project" @update:isOpen="isOpen = $event" />
 </template>

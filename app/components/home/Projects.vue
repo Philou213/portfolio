@@ -47,7 +47,7 @@ function openModal(projectData : Project) {
       </span>
     </div>
   </div>
-  <Popup :isOpen="isOpen" :project="selectedProject" @update:isOpen="isOpen = $event" />
+  <Popup v-if="selectedProject" :isOpen="isOpen" :project="selectedProject" @update:isOpen="isOpen = $event" />
 </template>
 
 <style scoped></style>

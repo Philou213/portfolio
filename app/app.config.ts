@@ -4,7 +4,7 @@ export default defineAppConfig({
   profilePicture: '/assets/graduationCrop.jpg',
   footerName: 'Philippe St-Laurent-Recoura',
   email: 'philippestlr@gmail.com',
-  twitterUsername: '@HugoRCD__',
+  twitterUsername: '@Philou213',
   phone: '(+33) 6 21 56 22 18',
   openGraphImage: 'https://canvas.hrcd.fr/social-preview.jpg',
   socials: {
