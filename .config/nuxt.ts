@@ -84,19 +84,17 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: 'no_prefix', 
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
+    strategy: 'no_prefix',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      alwaysRedirect: true,
-      fallbackLocale: 'en',
       redirectOn: 'root',
     },
+    baseUrl: '/',
+    locales: ['en','fr'],
+    defaultLocale: 'en',
     vueI18n: '~/i18n.config.ts',
   },
-  
 
   nitro: {
     prerender: {
