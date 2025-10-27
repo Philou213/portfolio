@@ -7,10 +7,8 @@ type: "Godot"
 tags:
   - Godot
   - Gamejam
-  - Favorite
 layout: project
-featured: true
 context: "Wonderjam Winter 2025 (Internal Game Jam at UQAC)"
 role: "Programmer (Item Purchase System, Resource System)"
-description: "In this survival game, the player must mine ores while avoiding monsters lurking in the darkness."
+description: "First place winner. In this survival game, the player must mine ores while avoiding monsters lurking in the darkness."
 ---
