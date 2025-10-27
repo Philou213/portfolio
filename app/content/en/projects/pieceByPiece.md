@@ -10,5 +10,5 @@ tags:
 layout: project
 context: "Wonderjam Fall 2024 (Internal Game Jam at UQAC)"
 role: "UI/UX Programmer"
-description: "In this puzzle game, the player must move puzzle pieces to create a path to the exit."
+description: "First place winner. In this puzzle game, the player must move puzzle pieces to create a path to the exit."
 ---

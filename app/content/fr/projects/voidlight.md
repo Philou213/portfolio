@@ -7,10 +7,8 @@ type: "Godot"
 tags:
     - Godot
     - Gamejam
-    - Favorite
 layout: project
-featured: true
 context: "Wonderjam hiver 2025 (GameJam interne à l'UQAC)"
 role: "Programmeur (Système d'achat d'objets, système de ressources)"
-description: "Dans ce jeu de survie, le joueur doit extraire des minerais tout en évitant de se faire attraper par des monstres dans l'obscurité."
+description: "1ère place dans la GameJam. Dans ce jeu de survie, le joueur doit extraire des minerais tout en évitant de se faire attraper par des monstres dans l'obscurité."
 ---
