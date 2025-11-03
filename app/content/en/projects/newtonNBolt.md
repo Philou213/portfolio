@@ -10,5 +10,5 @@ tags:
 layout: project
 context: "School project"
 role: "Developer"
-description: "Password for Itch page : 'goodDog'"
+description: "Password for Itch page : 'goodDog' \n In this puzzle-platformer game, a robot named Newton must escape a city full of hostile robots to safely take his dog friend, Bolt, back home."
 ---

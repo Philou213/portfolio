@@ -9,6 +9,6 @@ tags:
     - Scolaire
 layout: project
 context: "School project"
-role: "Developer"
-description: ""
+role: "Solo Developer"
+description: "In this online multiplayer game inspired by Among Us, players must complete tasks to accomplish their mission, while traitors try to stop them by eliminating them."
 ---

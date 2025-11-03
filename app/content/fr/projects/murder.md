@@ -9,6 +9,6 @@ tags:
     - Scolaire
 layout: project
 context: "Projet scolaire"
-role: "Développeur"
-description: ""
+role: "Développeur solo"
+description: "Dans ce jeu multijoueur en ligne inspiré de Among us, les joueurs doivent remplir des tâches pour compléter leur mission, mais des traîtres tentent de les empêcher en les éliminant."
 ---
