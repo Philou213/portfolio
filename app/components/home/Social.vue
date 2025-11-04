@@ -7,7 +7,7 @@ const socialMediaRegexMap = [
   { regex: /spotify\.com/, name: 'Spotify', logo: 'SvgoSpotify' },
   { regex: /gitlab\.com/, name: 'GitLab', logo: 'SvgoGitlab' },
   { regex: /.itch.io/, name: 'Itch', logo: 'SvgoItch' },
-  { regex: /cv/, name: 'CV', logo: 'SvgoCv' },
+  { regex: /cv/, name: 'CV', logo: 'SvgoItch' },
 ]
 
 const { socials } = useAppConfig()
@@ -37,5 +37,12 @@ const mappedSocials = Object.values(socials).map((link) => {
         :aria-label="social.name + ' logo'"
       />
     </NuxtLink>
+    <a
+      href="/assets/CV.pdf"
+      download
+      class="flex items-center justify-center rounded-xl border border-gray-500 px-4 py-2 text-sm text-gray-700 transition-colors duration-300 hover:bg-emerald-500 hover:text-white dark:text-gray-200"
+    >
+    {{ $t("global.download_cv") }}
+    </a>
   </div>
 </template>

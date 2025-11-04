@@ -26,5 +26,6 @@
   "type": "Type de projet : ",
   "search" : "Rechercher un projet...",
   "filter": "Filtrer par Tags",
-  "no_projects_found": "Aucun projet trouvé"
+  "no_projects_found": "Aucun projet trouvé",
+  "download_cv": "Télécharger le CV"
 }
